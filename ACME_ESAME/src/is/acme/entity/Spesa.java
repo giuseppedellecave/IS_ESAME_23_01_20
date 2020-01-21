@@ -11,7 +11,6 @@ public class Spesa {
 	private ArrayList<DettaglioProdotto> dettaglioProdotto;
 
 	public Spesa(int ID, Date data, ArrayList<DettaglioProdotto> dettaglioProdotto) {
-
 		this.ID = ID;
 		this.data = data;
 		this.stato = StatoSpedizione.ORDINATA;
@@ -20,9 +19,6 @@ public class Spesa {
 		for(DettaglioProdotto dettaglioPrd : dettaglioProdotto) {
 			this.costoTotale +=  ((dettaglioPrd.getQuantita()) * (dettaglioPrd.getProdotto().getPrezzo()));
 		}
-		
-		
-
 	}
 
 	public Date getData() {

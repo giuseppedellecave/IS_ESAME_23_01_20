@@ -6,10 +6,8 @@ public class DettaglioProdotto {
 	private int quantita;
 
 	public DettaglioProdotto(Prodotto prodotto, int quantita) {
-
 		this.prodotto = prodotto;
 		this.quantita = quantita;
-
 	}
 
 	public Prodotto getProdotto() {
@@ -27,5 +25,5 @@ public class DettaglioProdotto {
 	public void setQuantita(int quantita) {
 		this.quantita = quantita;
 	}
-	
+
 }

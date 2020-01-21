@@ -1,7 +1,6 @@
 package is.acme.control;
 
 import java.util.ArrayList;
-import java.util.TreeSet;
 
 import is.acme.entity.*;
 
@@ -14,12 +13,10 @@ public class GestoreImpiegati {
 	}
 
 	public void creaProdotto (int codice, String nome, String descrizione, float prezzo, int quantita) {
-
 		this.listaProdotti.add(new Prodotto(codice, nome, descrizione, prezzo, quantita));
-
 	}
 
-	public ArrayList<Prodotto> getListaProdotti()throws Exception{
+	public ArrayList<Prodotto> getListaProdotti()throws ACME_Exception{
 		ArrayList<Prodotto> ris = new ArrayList<Prodotto>();
 
 		boolean found = false;
@@ -31,9 +28,8 @@ public class GestoreImpiegati {
 			}
 
 		if(!found)
-			throw new Exception("Nessun Prodotto Disponibile!"); 
+			throw new ACME_Exception("Nessun Prodotto Disponibile!"); 
 		return ris;
-
 	}
 
 	public ArrayList<Report> generaReport(int N, ArrayList<Cliente> listaClienti) {

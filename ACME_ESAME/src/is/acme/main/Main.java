@@ -44,8 +44,8 @@ public class Main {
 
 		}
 
-		catch(Exception e) {
-			System.out.println(e.getMessage());
+		catch(ACME_Exception e) {
+			e.printStackTrace();
 		}
 	}
 

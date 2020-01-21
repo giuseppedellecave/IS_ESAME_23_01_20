@@ -10,9 +10,9 @@ public class Carrello {
 		this.prodottiInCarrello = new ArrayList<DettaglioProdotto>();
 	}
 
-	public void aggiungiProdotto(Prodotto prodotto, int quantita) throws Exception {
+	public void aggiungiProdotto(Prodotto prodotto, int quantita) throws ACME_Exception {
 		if ((prodotto.getQuantita() - quantita) < 0)
-			throw new Exception("Quantià non disponibile!");
+			throw new ACME_Exception("Quantià non disponibile!");
 
 		else {
 			this.prodottiInCarrello.add(new DettaglioProdotto(prodotto, quantita));
