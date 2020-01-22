@@ -30,12 +30,12 @@ public class Main {
 			carrello1.aggiungiProdotto(gImpiegati.getListaProdotti().get(0), 3);
 			carrello1.aggiungiProdotto(gImpiegati.getListaProdotti().get(1), 2);
 			carrello1.aggiungiProdotto(gImpiegati.getListaProdotti().get(3), 4);
-			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(0), carrello1.svuotaCarrello());
+			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(0), carrello1);
 
 
 			Carrello carrello2 = new Carrello();
 			carrello2.aggiungiProdotto(gImpiegati.getListaProdotti().get(1), 1);
-			gClienti.effettuaSpesa(2, gClienti.getListaClienti().get(1), carrello2.svuotaCarrello());
+			gClienti.effettuaSpesa(2, gClienti.getListaClienti().get(1), carrello2);
 
 			ArrayList<Report> report = new ArrayList<Report>(gImpiegati.generaReport(1, gClienti.getListaClienti()));
 

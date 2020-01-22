@@ -20,7 +20,8 @@ public class GestoreClienti {
 		return this.listaClienti;
 	}
 
-	public void effettuaSpesa(int ID, Cliente cliente, ArrayList<DettaglioProdotto> dettaglioProdotto) {
+	public void effettuaSpesa(int ID, Cliente cliente, Carrello carrello) {
+		ArrayList<DettaglioProdotto> dettaglioProdotto = carrello.svuotaCarrello(); 
 		Date data=java.util.Calendar.getInstance().getTime();
 		Spesa s = new Spesa(ID, data, dettaglioProdotto);
 		cliente.addListaSpese(s);

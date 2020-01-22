@@ -57,13 +57,13 @@ public class TestSuite {
 			carrello1.aggiungiProdotto(gImpiegati.getListaProdotti().get(0), 2); //Deodorante
 			carrello1.aggiungiProdotto(gImpiegati.getListaProdotti().get(2), 1); //Fazzoloetti
 
-			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(0), carrello1.svuotaCarrello());
+			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(0), carrello1);
 
 			Carrello carrello2 = new Carrello();
 			carrello2.aggiungiProdotto(gImpiegati.getListaProdotti().get(0), 1); //Deodorante
 			carrello2.aggiungiProdotto(gImpiegati.getListaProdotti().get(1), 1); //Dentifricio
 
-			gClienti.effettuaSpesa(2, gClienti.getListaClienti().get(0), carrello2.svuotaCarrello());
+			gClienti.effettuaSpesa(2, gClienti.getListaClienti().get(0), carrello2);
 
 			ArrayList<Report> report = new ArrayList<Report>(gImpiegati.generaReport(2, gClienti.getListaClienti()));
 
@@ -102,7 +102,7 @@ public class TestSuite {
 			carrello1.aggiungiProdotto(gImpiegati.getListaProdotti().get(0), 2); //Deodorante
 			carrello1.aggiungiProdotto(gImpiegati.getListaProdotti().get(2), 2); //Fazzoloetti
 
-			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(0), carrello1.svuotaCarrello());
+			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(0), carrello1);
 
 
 			ArrayList<Report> report = new ArrayList<Report>(gImpiegati.generaReport(1, gClienti.getListaClienti()));
@@ -142,7 +142,7 @@ public class TestSuite {
 			carrello1.aggiungiProdotto(gImpiegati.getListaProdotti().get(2), 2); //Fazzoloetti
 			carrello1.aggiungiProdotto(gImpiegati.getListaProdotti().get(1), 4); //Dentifricio
 
-			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(0), carrello1.svuotaCarrello());
+			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(0), carrello1);
 
 
 			ArrayList<Report> report = new ArrayList<Report>(gImpiegati.generaReport(0, gClienti.getListaClienti()));
@@ -184,13 +184,13 @@ public class TestSuite {
 			carrello1.aggiungiProdotto(gImpiegati.getListaProdotti().get(2), 2); //Fazzoloetti
 			carrello1.aggiungiProdotto(gImpiegati.getListaProdotti().get(1), 4); //Dentifricio
 
-			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(0), carrello1.svuotaCarrello());
+			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(0), carrello1);
 
 
 			Carrello carrello2 = new Carrello();
 
 			carrello2.aggiungiProdotto(gImpiegati.getListaProdotti().get(0), 2); //Deodorante
-			gClienti.effettuaSpesa(2, gClienti.getListaClienti().get(1), carrello2.svuotaCarrello());
+			gClienti.effettuaSpesa(2, gClienti.getListaClienti().get(1), carrello2);
 
 
 			ArrayList<Report> report = new ArrayList<Report>(gImpiegati.generaReport(2, gClienti.getListaClienti()));
@@ -230,26 +230,26 @@ public class TestSuite {
 			carrello1.aggiungiProdotto(gImpiegati.getListaProdotti().get(2), 2); //Fazzoloetti
 			carrello1.aggiungiProdotto(gImpiegati.getListaProdotti().get(1), 4); //Dentifricio
 
-			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(0), carrello1.svuotaCarrello());
+			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(0), carrello1);
 
 			Carrello carrello2 = new Carrello();
 
 			carrello2.aggiungiProdotto(gImpiegati.getListaProdotti().get(1), 4); //Dentifricio
 
-			gClienti.effettuaSpesa(2, gClienti.getListaClienti().get(1), carrello2.svuotaCarrello());
+			gClienti.effettuaSpesa(2, gClienti.getListaClienti().get(1), carrello2);
 
 			Carrello carrello3 = new Carrello();
 
 			carrello3.aggiungiProdotto(gImpiegati.getListaProdotti().get(1), 4); //Dentifricio
 			carrello3.aggiungiProdotto(gImpiegati.getListaProdotti().get(0), 2); //Deodorante
 
-			gClienti.effettuaSpesa(3, gClienti.getListaClienti().get(0), carrello3.svuotaCarrello());
+			gClienti.effettuaSpesa(3, gClienti.getListaClienti().get(0), carrello3);
 
 			Carrello carrello4 = new Carrello();
 
 			carrello4.aggiungiProdotto(gImpiegati.getListaProdotti().get(2), 1); //Fazzoloetti
 
-			gClienti.effettuaSpesa(4, gClienti.getListaClienti().get(1), carrello4.svuotaCarrello());
+			gClienti.effettuaSpesa(4, gClienti.getListaClienti().get(1), carrello4);
 
 
 			ArrayList<Report> report = new ArrayList<Report>(gImpiegati.generaReport(2, gClienti.getListaClienti()));
@@ -293,14 +293,14 @@ public class TestSuite {
 
 			carrello1.aggiungiProdotto(gImpiegati.getListaProdotti().get(1), 4); //Dentifricio
 
-			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(1), carrello1.svuotaCarrello());
+			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(1), carrello1);
 
 
 			Carrello carrello2= new Carrello();
 
 			carrello2.aggiungiProdotto(gImpiegati.getListaProdotti().get(2), 2); //Fazzoloetti
 
-			gClienti.effettuaSpesa(2, gClienti.getListaClienti().get(1), carrello2.svuotaCarrello());
+			gClienti.effettuaSpesa(2, gClienti.getListaClienti().get(1), carrello2);
 
 
 			ArrayList<Report> report = new ArrayList<Report>(gImpiegati.generaReport(2, gClienti.getListaClienti()));
@@ -343,7 +343,7 @@ public class TestSuite {
 			carrello1.aggiungiProdotto(gImpiegati.getListaProdotti().get(0), 1); //Deodorante
 			carrello1.aggiungiProdotto(gImpiegati.getListaProdotti().get(2), 3); //Fazzoloetti
 
-			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(0), carrello1.svuotaCarrello());
+			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(0), carrello1);
 
 
 			Carrello carrello2 = new Carrello();
@@ -351,14 +351,14 @@ public class TestSuite {
 			carrello2.aggiungiProdotto(gImpiegati.getListaProdotti().get(0), 1); //Deodorante
 			carrello2.aggiungiProdotto(gImpiegati.getListaProdotti().get(1), 2); //Dentifricio
 
-			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(1), carrello2.svuotaCarrello());
+			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(1), carrello2);
 
 			Carrello carrello3 = new Carrello();
 
 			carrello3.aggiungiProdotto(gImpiegati.getListaProdotti().get(1), 3); //Dentifricio
 			carrello3.aggiungiProdotto(gImpiegati.getListaProdotti().get(2), 4); //Fazzoletti
 
-			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(2), carrello3.svuotaCarrello());
+			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(2), carrello3);
 
 
 
@@ -432,7 +432,7 @@ public class TestSuite {
 			carrello1.aggiungiProdotto(gImpiegati.getListaProdotti().get(0), 1); //Deodorante
 			carrello1.aggiungiProdotto(gImpiegati.getListaProdotti().get(2), 3); //Fazzoloetti
 
-			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(0), carrello1.svuotaCarrello());
+			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(0), carrello1);
 
 
 			Carrello carrello2 = new Carrello();
@@ -440,7 +440,7 @@ public class TestSuite {
 			carrello2.aggiungiProdotto(gImpiegati.getListaProdotti().get(0), 1); //Deodorante
 			carrello2.aggiungiProdotto(gImpiegati.getListaProdotti().get(1), 2); //Dentifricio
 
-			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(1), carrello2.svuotaCarrello());
+			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(1), carrello2);
 
 
 			ArrayList<Report> report = new ArrayList<Report>(gImpiegati.generaReport(-1, gClienti.getListaClienti()));
@@ -480,26 +480,26 @@ public class TestSuite {
 			carrello1.aggiungiProdotto(gImpiegati.getListaProdotti().get(2), 2); //Fazzoloetti
 			carrello1.aggiungiProdotto(gImpiegati.getListaProdotti().get(1), 1); //Dentifricio
 
-			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(0), carrello1.svuotaCarrello());
+			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(0), carrello1);
 
 			Carrello carrello2 = new Carrello();
 
 			carrello2.aggiungiProdotto(gImpiegati.getListaProdotti().get(1), 4); //Dentifricio
 
-			gClienti.effettuaSpesa(2, gClienti.getListaClienti().get(1), carrello2.svuotaCarrello());
+			gClienti.effettuaSpesa(2, gClienti.getListaClienti().get(1), carrello2);
 
 			Carrello carrello3 = new Carrello();
 
 			carrello3.aggiungiProdotto(gImpiegati.getListaProdotti().get(1), 4); //Dentifricio
 			carrello3.aggiungiProdotto(gImpiegati.getListaProdotti().get(0), 2); //Deodorante
 
-			gClienti.effettuaSpesa(3, gClienti.getListaClienti().get(0), carrello3.svuotaCarrello());
+			gClienti.effettuaSpesa(3, gClienti.getListaClienti().get(0), carrello3);
 
 			Carrello carrello4 = new Carrello();
 
 			carrello4.aggiungiProdotto(gImpiegati.getListaProdotti().get(2), 1); //Fazzoloetti
 
-			gClienti.effettuaSpesa(4, gClienti.getListaClienti().get(1), carrello4.svuotaCarrello());
+			gClienti.effettuaSpesa(4, gClienti.getListaClienti().get(1), carrello4);
 
 
 			ArrayList<Report> report = new ArrayList<Report>(gImpiegati.generaReport(2, gClienti.getListaClienti()));
@@ -543,26 +543,26 @@ public class TestSuite {
 			carrello1.aggiungiProdotto(gImpiegati.getListaProdotti().get(2), 2); //Fazzoloetti
 			carrello1.aggiungiProdotto(gImpiegati.getListaProdotti().get(1), 1); //Dentifricio
 
-			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(0), carrello1.svuotaCarrello());
+			gClienti.effettuaSpesa(1, gClienti.getListaClienti().get(0), carrello1);
 
 			Carrello carrello2 = new Carrello();
 
 			carrello2.aggiungiProdotto(gImpiegati.getListaProdotti().get(1), 4); //Dentifricio
 
-			gClienti.effettuaSpesa(2, gClienti.getListaClienti().get(1), carrello2.svuotaCarrello());
+			gClienti.effettuaSpesa(2, gClienti.getListaClienti().get(1), carrello2);
 
 			Carrello carrello3 = new Carrello();
 
 			carrello3.aggiungiProdotto(gImpiegati.getListaProdotti().get(1), 4); //Dentifricio
 			carrello3.aggiungiProdotto(gImpiegati.getListaProdotti().get(0), 2); //Deodorante
 
-			gClienti.effettuaSpesa(3, gClienti.getListaClienti().get(0), carrello3.svuotaCarrello());
+			gClienti.effettuaSpesa(3, gClienti.getListaClienti().get(0), carrello3);
 
 			Carrello carrello4 = new Carrello();
 
 			carrello4.aggiungiProdotto(gImpiegati.getListaProdotti().get(2), 1); //Fazzoloetti
 
-			gClienti.effettuaSpesa(4, gClienti.getListaClienti().get(1), carrello4.svuotaCarrello());
+			gClienti.effettuaSpesa(4, gClienti.getListaClienti().get(1), carrello4);
 
 
 			ArrayList<Report> report = new ArrayList<Report>(gImpiegati.generaReport(1, gClienti.getListaClienti()));
