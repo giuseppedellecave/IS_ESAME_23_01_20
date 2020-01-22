@@ -15,7 +15,7 @@ public class Report {
 	public String toString(){
 		return "REPORT CLIENTE " + this.cliente.getNomeUtente() 
 		+"\nNUMERO SPESE = " + this.numeroSpese
-		+ "\nCOSTO COMPLESSIVO =  " + this.spesaTotale 
+		+ "\nCOSTO COMPLESSIVO = " + this.spesaTotale 
 		+ "\n\n"
 		;
 	}

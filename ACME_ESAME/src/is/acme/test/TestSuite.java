@@ -5,7 +5,6 @@ import static org.junit.Assert.*;
 
 import java.util.ArrayList;
 
-import org.junit.Before;
 import org.junit.Test;
 
 import is.acme.control.GestoreClienti;
@@ -389,9 +388,9 @@ public class TestSuite {
 		GestoreClienti gClienti = new GestoreClienti();
 		GestoreImpiegati gImpiegati = new GestoreImpiegati();
 
-		gImpiegati.creaProdotto(1, "Deodorante", "Elimina il sudore!" , 2.99f , 20);
-		gImpiegati.creaProdotto(2, "Dentifricio", "Sbianca i denti!" , 1.39f, 20);
-		gImpiegati.creaProdotto(3, "Fazzoletti" , "Salute! Grazie!" , 0.99f, 20);
+		gImpiegati.creaProdotto(1, "Deodorante", "Elimina il sudore!" , 2.99f , 6);
+		gImpiegati.creaProdotto(2, "Dentifricio", "Sbianca i denti!" , 1.39f, 6);
+		gImpiegati.creaProdotto(3, "Fazzoletti" , "Salute! Grazie!" , 0.99f, 10);
 
 
 
